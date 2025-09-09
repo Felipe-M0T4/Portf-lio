@@ -1,61 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Mota</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Mota</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    #header {
+      background-color: #380177;
+      color: #ccc;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #header img {
+      width: 300px;
+      height: 200px;
+      object-fit: contain;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      color: #380177;
+      margin-top: 5px;
+    }
+
+    h4 {
+      color: #e0e0e0;
+      margin-top: 5px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 10px auto;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #380177;
+      text-decoration: none;
+    }
+
+    a:hover {
+      cursor: pointer;
+      background-color: #dbd6d6;
+      transition-duration: 1s;
+      border: solid 1px #dbd6d6;
+    }
+
+    .projeto {
+      background-color: #e3e3e3;
+      width: 250px;
+      margin: 0 auto;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .projeto img {
+      width: 100%;
+      height: 150px;
+      background-color: #ccc;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .icon {
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    @media (max-width: 600px) {
+      #header img {
+        width: 80%;
+        height: auto;
+      }
+
+      .projeto {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div id="header" style="height: 430px; background-color:rgb(56, 1, 119); width: 100%; text-align: center; margin-top: 0px; margin-left: 0px; margin-right: 0px">
+  <div id="header">
+    <h1>Bem Vindo</h1>
+
+    <img src="C:\Users\suporte\Documents\Felipe Mota\Portifolio_FelipeMota\download (1).png" alt="Imagem de Capa">
+
+    <h1 style="font-size: 30px">Portfólio - Felipe Mota</h1>
+    <h4>Full Stack</h4>
+    <p><strong>Descrição:</strong> Interessado por resolver problemas com Full Stack. Tenho experiência em desenvolvimento web com foco em estilo imersivo e interfaces intuitivas.</p>
+    <br>
+    <button style="font-size: 30px; border-radius: 6px"><a><strong>Currículo</strong></a></button>
+  </div>
+
+  <section>
+    <h2>Contatos 
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c..."/>
+      </svg>
+    </h2>
+    <ul>
+      <li><strong>GitHub:</strong> <a href="#">github.com/F3L1P3_M0T4</a></li>
+      <li><strong>Email:</strong> <a href="mailto:felipeolimota10@gmail.com">felipeolimota10@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/felipemota</a></li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Projetos em Destaque 
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5..."/>
+      </svg>
+    </h2>
+
+    <br>
+
+    <div style="border: solid 4px #380177" class="projeto">
+      <img src="https://s2-techtudo.glbimg.com/xdHWbzWsdbxK_kiyvuw1MZjz55g=/0x0:695x595/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/p/0/I251diR3GWNXBq8z5jFw/iphone-android.jpg" alt="Projeto Cards">
+      <h2><a href="#"> 
         
-        <h1 style="color: rgb(159, 159, 159)">Bem Vindo</h1>]
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+       <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+       </svg>
+       Projeto Cards</a></h2>
 
-        <img src="c:\Users\suporte\Downloads\capa-o-que-e-Front-end-removebg-preview.png" style="width: 300px; height: 200px;">
-
-        <h2 style="color: GRAY">Portfólio - Felipe Mota</h2>
-        <h4 style="color: rgb(220, 218, 218)">Full Stack</h4>
-    <p style="color: rgb(232, 227, 227)"><strong>Descrição:</strong> Interessado por resolver problemas com Full Stack. Tenho experiência em desenvolvimento web com foco em estilo imersivo e interfaces intuitivas.</p>
+      <p><strong>Descrição:</strong> Simulação do Instagram em cards.</p>
     </div>
+  </section>
 
+  <hr>
 
-    <div style="text-align: center">
-    <h3>Contatos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg></h3> 
+  <section>
+    <h2>Tecnologias e Skills 
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81..."/>
+      </svg>
+    </h2>
+    <br>
+    <ul>
+      <li style="width: 205px; height: 27x; text-align: center; background-color: rgb(228, 227, 227); border-radius: 8px; justify-content: center; align-items: center; margin-left: 44%">HTML, CSS, JavaScript</li>
+      <li style="width: 205px; height: 27x; text-align: center; background-color: rgb(228, 227, 227); border-radius: 8px; justify-content: center; align-items: center; margin-left: 44%">PHP</li>
+      <li style="width: 205px; height: 27x; text-align: center; background-color: rgb(228, 227, 227); border-radius: 8px; justify-content: center; align-items: center; margin-left: 44%">MySQL</li>
+    </ul>
+  </section>
 
-    <li><strong>GitHub: </strong> <a href="">github.com/F3L1P3_M0T4</a></li>
-    <li><strong>Email: </strong> <a href="">felipeolimota10@gmail.com</a></li>
-    <li><strong>LinkedIn </strong> <a href="">linkedin.com/in/felipemota</a></li>
-
-</div>
-
-<div style="text-align: center">
-    <hr>
-    <h3>Projetos em Destaque <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-</svg></h3>
-    
-
-        <div id="p1" style="width: 200px; height: 230px; background-color: rgb(227, 227, 227); margin-top: 10px; margin-left: 10px">
-
-            <img src="" alt="Projeto Cards"></img>
-            <h3 style="text-align: center"><a href="">Projeto Cards</a></h3>
-            <p style="text-align: center"><strong>Descrição: </strong>simulação do instagram em cards</p>
-        </div>
-
-    <hr>
-</div>
-</div>
-
-<div style="text-align: center">
-    <h3>Tecnologias e Skills: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-  <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-</svg></h3> 
-    <li>HTML, CSS, JS</li>
-    <li>PHP</li>
-    <li>MySQL</li>
-
-</div>
 </body>
 </html>
