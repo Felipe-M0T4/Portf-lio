@@ -12,8 +12,8 @@
 }
 
 body {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-texto);
+  background-color:  #ffffff;
+  color: rgb(30, 0, 65);
   font-family: var(--font-corpo);
   line-height: 1.6;
 }
@@ -38,21 +38,23 @@ body {
   opacity: 0.9;
 }
 
-.btn-curriculo {
+#btn-curriculo {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.8rem 1.6rem;
   font-size: 1.2rem;
   border-radius: 8px;
-  background-color: var(--cor-texto-claro);
-  color: var(--cor-principal);
+  background-color: rgb(255, 255, 255);
+  color: rgb(61, 4, 119);
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-curriculo:hover {
-  background-color: var(--cor-principal);
-  color: var(--cor-texto-claro);
+#btn-curriculo:hover {
+  background-color: rgb(236, 236, 236);
+  color: rgb(60, 15, 104);
+  cursor: pointer;
+  transition: 0.5s
 }
 
 /* Seções gerais */
@@ -170,7 +172,7 @@ ul.contatos li a:hover {
   header h1 {
     font-size: 2.2rem;
   }
-  .btn-curriculo {
+  #btn-curriculo {
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
   }
@@ -185,6 +187,32 @@ ul.contatos li a:hover {
   }
 }
 
+#DivCard{
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  width: 400px;
+  height: 300px;
+}
+
+#list{
+  margin-top: 7px;
+  width: 205px;
+  height: 27x;
+  text-align: center;
+  background-color: rgb(228, 227, 227);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 44%;
+}
+
+.section{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
   </style>
 </head>
 <body>
@@ -193,10 +221,10 @@ ul.contatos li a:hover {
     <h1>Bem Vindo</h1>
 
     <h1 style="font-size: 30px">Portfólio - Felipe Mota</h1>
-    <h4>Full Stack</h4>
-    <p><strong>Descrição:</strong> Interessado por resolver problemas com Full Stack. Tenho experiência em desenvolvimento web com foco em estilo imersivo e interfaces intuitivas.</p>
+    <h2>Full Stack</h2>
+    <p>Interessado por resolver problemas com Full Stack. Tenho experiência em desenvolvimento web com foco em estilo imersivo e interfaces intuitivas.</p>
     <br>
-    <button style="font-size: 30px; border-radius: 6px"><a style="color: rgb(56, 7, 56); text-decoration: none" href="https://github.com/Felipe-M0T4/Portf-lio/raw/main/Curr%C3%ADculo.ext%20(3).pdf"><strong>Currículo</strong></a></button>
+    <button id="btn-curriculo" href="https://github.com/Felipe-M0T4/Portf-lio/raw/main/Curr%C3%ADculo.ext%20(3).pdf"><strong>Currículo</strong></a></button>
     <br><br>
   </div>
 
@@ -217,12 +245,9 @@ ul.contatos li a:hover {
   <hr>
 
   <section>
-    <h2>Projetos em Destaque 
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5..."/>
-      </svg>
-    </h2>
+  <h2>Projetos em Destaque</h2>
 
+    <div id="DivCard">
     <!--PROJETO CARDS-->
     <div style="border: solid 4px #380177; margin-left: 20px" class="projeto">
       <img src="https://s2-techtudo.glbimg.com/xdHWbzWsdbxK_kiyvuw1MZjz55g=/0x0:695x595/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/p/0/I251diR3GWNXBq8z5jFw/iphone-android.jpg" alt="Projeto Cards">
@@ -249,7 +274,7 @@ ul.contatos li a:hover {
     <!--PROJETO TAREFAS-->
     
     <div style="border: solid 4px #380177; margin-left: 20px" class="projeto">
-      <img src="https://github.com/Felipe-M0T4/Projeto_Tarefas/blob/main/STATUS.html" alt="Projeto Tarefas">
+      <img src="https://lh5.googleusercontent.com/proxy/_iE5ml-ZWks8I45GNZNkg6FZ2SBzeW_3ry8KTAJhorwiwZtIOuCWhfHFuC-oFIedvSQY5B5f0MgVEI9511fxeAmYY8_uWlbZ8WYMEO7I_h8kx0uMPDkDB10NZg3FuBRVIMcuzREEOVnsxhcsfg" alt="Projeto Tarefas">
       <h2>
         
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
@@ -270,6 +295,7 @@ ul.contatos li a:hover {
       <p><strong>Descrição:</strong> Projeto gameficado de tarefas semanais e desenvolvimento de habilidades.</p>
     </div>
 
+    </div>
   </section>
 
   <br>
@@ -282,9 +308,11 @@ ul.contatos li a:hover {
       </svg>
     </h2>
     <ul>
-      <li style="width: 205px; height: 27x; text-align: center; background-color: rgb(228, 227, 227); border-radius: 8px; justify-content: center; align-items: center; margin-left: 44%">HTML, CSS, JavaScript</li>
-      <li style="width: 205px; height: 27x; text-align: center; background-color: rgb(228, 227, 227); border-radius: 8px; justify-content: center; align-items: center; margin-left: 44%">PHP</li>
-      <li style="width: 205px; height: 27x; text-align: center; background-color: rgb(228, 227, 227); border-radius: 8px; justify-content: center; align-items: center; margin-left: 44%">MySQL</li>
+      <li id="list">HTML, CSS, JavaScript</li>
+      
+      <li id="list">PHP</li>
+      
+      <li id="list">MySQL</li>
     </ul>
   </section>
 
